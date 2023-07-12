@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Listen to your favourite music online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon-16x16.png" type="image/png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <!-- <li class="auto"><button id="btn" >Autoplay next song</button></li> -->
+            <li class="auto">Autoplay next song <input type="checkbox" id="check"></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Best of NCS - No Copyright Sounds</h1>
+            <div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="0" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="1" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="2" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="3" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="4" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="5" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class = "songName">Senorita</span>
+                    <span class="timestamp"><span class = "duration"></span> <i id="6" class="songItemPlay fa-solid fa-circle-play"></i></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icon">
+            <!-- fontawesome icon  -->
+            <i class=" fa-solid fa-2x fa-backward-step" id="previous"></i>
+            <i class=" fa-solid fa-2x fa-circle-play" id="masterPlay"></i>
+            <i class=" fa-solid fa-2x fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="45px" id="gif" alt="playing"> <span id="masterSongName">Senorita - Shawn Mendes, Camila Cabello</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/0a0ff765f8.js" crossorigin="anonymous"></script>
+</body>
+</html>
